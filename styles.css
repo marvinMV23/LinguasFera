@@ -1,0 +1,133 @@
+html{
+    font-family: "Open Sans", sans-serif;
+}
+
+
+body{
+    margin: 0;
+}
+
+h1,h2,h3,h4,h5,p,span{
+    margin: 0;
+    color: #295677 ;
+}
+
+.container {
+    max-width: 1920px;
+    width: 100%;
+}
+
+/* header */
+
+header{
+
+    position:  relative;
+    top: 0;
+    height: auto;
+    width: 100%;
+}
+/*barra de navegação */
+nav {
+    position: fixed;
+    top: 0;
+    height: 100px;
+    width: 100%;
+    z-index: 1;
+    background-color: #295677;
+    border-bottom: 1px solid #a1aada;
+
+
+}
+
+nav:after{
+    clear: both;
+    content: "";
+    display: block;
+}
+
+
+.nav-container {
+    max-width: 1800px;
+    min-width: 100px;
+    position: relative;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+#logo {
+    width: 175px;
+    height: 91px;
+    margin-top: 0px;
+}
+
+
+.nav-container ul {
+    float: right;
+    height: 100px;
+    line-height: 100px;
+    margin: 0;
+}
+
+.nav-container li {
+    list-style: none;
+    float: left;
+    margin: 0 15px;
+    
+    
+}
+
+.nav-container li a {
+    text-decoration: none;
+    color: #ffffff;
+    transition: .5s;
+}
+
+.nav-container li a:hover {
+    color: #ffffff;
+}
+
+
+/*Inicio*/
+
+#inicio{
+    background-image: url("img/capaInicio.png") no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    position: relative;
+    margin-top: 100px;
+}
+
+#banner{
+    position: relative;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 15em;
+    padding-bottom: 15px;
+    text-align: left;
+}
+
+
+.botao{
+    display: inline-block;
+    background-color: var(--first-color);
+    color: #fff8f8;
+    padding: 1rem;
+    border-radius: .5rem;
+    font-weight: var(--font-medium);
+    
+}
+  
+.botao:hover{
+    background-color: #000000;
+}
+  
+.botao__icon{
+    font-size: 1.25rem;
+    margin-left: 1.25rem;
+    transition: .3s;
+}
+
+
+
