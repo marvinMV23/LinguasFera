@@ -1,112 +1,61 @@
 html{
-    font-family: "Open Sans", sans-serif;
+    scroll-behavior: smooth;
 }
 
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
 body{
-    margin: 0;
+    margin: 0 ;
+    font-family: Arial, sans-serif;
 }
 
-h1,h2,h3,h4,h5,p,span{
-    margin: 0;
-    color: #295677 ;
+h1{
+    font-size: 42px;
+    margin-bottom: 20px;
+    
 }
-
-.container {
-    max-width: 1920px;
-    width: 100%;
-}
-
-/* header */
-
-header{
-
-    position:  relative;
-    top: 0;
-    height: auto;
-    width: 100%;
-}
-/*barra de navegação */
-nav {
-    position: fixed;
-    top: 0;
-    height: 100px;
-    width: 100%;
-    z-index: 1;
-    background-color: #295677;
-    border-bottom: 1px solid #a1aada;
-
-
-}
-
-nav:after{
-    clear: both;
-    content: "";
-    display: block;
+/* header*/
+.header {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   background-color: #2a5783;
+   padding: 10px 20px;
 }
 
 
-.nav-container {
-    max-width: 1800px;
-    min-width: 100px;
-    position: relative;
-    margin-right: auto;
-    margin-left: auto;
+.header .logo img {
+    width: 150px;
 }
 
-#logo {
-    width: 175px;
-    height: 91px;
-    margin-top: 0px;
-}
-
-
-.nav-container ul {
-    float: right;
-    height: 100px;
-    line-height: 100px;
-    margin: 0;
-}
-
-.nav-container li {
+.nav ul {
     list-style: none;
-    float: left;
-    margin: 0 15px;
-    
-    
+    display: flex;
+    margin: 0;
+    padding: 0;
+
 }
 
-.nav-container li a {
+.nav ul li {
+    margin-left: 20px;
+
+}
+
+.nav ul li a {
     text-decoration: none;
-    color: #ffffff;
-    transition: .5s;
-}
-
-.nav-container li a:hover {
-    color: #ffffff;
+    color: white;
+    font-size: 16px;
 }
 
 
-/*Inicio*/
 
-#inicio{
-    background-image: url("img/capaInicio.png") no-repeat;
-    background-size: cover;
-    background-position: center center;
-    background-attachment: fixed;
-    position: relative;
-    margin-top: 100px;
-}
 
-#banner{
-    position: relative;
-    width: 80%;
-    margin-left: auto;
-    margin-right: auto;
-    padding-top: 15em;
-    padding-bottom: 15px;
-    text-align: left;
-}
+
 
 
 .botao{
