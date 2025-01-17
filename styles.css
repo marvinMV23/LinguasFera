@@ -108,6 +108,8 @@ h1{
     transition: .3s;
 }
 
+/*styles-sobre*/
+
 .sobre {
     position: relative;
     background-image: url('img/capaSobre.png'); /* Substitua pelo caminho da sua imagem */
@@ -174,6 +176,76 @@ h1{
 
 @media (max-width: 768px) {
     .cards {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+/*stlyes cursos*/
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to bottom, #d9e6f2, #ffffff);
+}
+
+.curso-section {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.curso-cards {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.curso-card {
+    background: #003366;
+    color: white;
+    border-radius: 15px;
+    overflow: hidden;
+    width: 300px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+.curso-card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+}
+
+.curso-card h3 {
+    font-size: 1.5rem;
+    margin: 15px 0;
+}
+
+.curso-card p {
+    font-size: 1rem;
+    padding: 0 15px;
+    margin-bottom: 20px;
+    line-height: 1.5;
+}
+
+.curso-card a {
+    display: inline-block;
+    margin: 15px 0;
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: #003366;
+    background: white;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background 0.3s;
+}
+
+.curso-card a:hover {
+    background: #f1f1f1;
+}
+
+@media (max-width: 768px) {
+    .curso-cards {
         flex-direction: column;
         align-items: center;
     }
