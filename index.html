@@ -79,27 +79,125 @@
             <section class="curso-section">
                 <div class="curso-cards">
                     <div class="curso-card">
-                        <img src="path-to-english-image.jpg" alt="Curso de Inglês"> <!-- Substituir pelo caminho da imagem -->
+                        <div class="flag">
+                            <img src="img/flag.webp" alt="Bandeira dos EUA"> 
+                        </div>
+                        <img src="img/ingles.webp" alt="Curso de Inglês"> 
                         <h3>Inglês</h3>
                         <p>O curso de Inglês da LinguasFera foi desenvolvido para atender desde iniciantes até alunos avançados, com foco no desenvolvimento das quatro principais habilidades: fala, leitura, escrita e compreensão auditiva.</p>
                         <a href="#">Conheça o curso</a>
                     </div>
         
                     <div class="curso-card">
-                        <img src="path-to-spanish-image.jpg" alt="Curso de Espanhol"> <!-- Substituir pelo caminho da imagem -->
+                        <div class="flag">
+                            <img src="img/flag-es.webp" alt="Bandeira da Espanha"> 
+                        </div>
+                        <img src="img/SPAIN.webp" alt="Curso de Espanhol"> 
                         <h3>Espanhol</h3>
                         <p>O curso de Espanhol da LinguasFera é ideal para quem deseja aprender uma das línguas mais faladas do mundo de forma prática e eficiente. Com foco em conversação e situações do dia a dia.</p>
                         <a href="#">Conheça o curso</a>
                     </div>
         
                     <div class="curso-card">
-                        <img src="path-to-french-image.jpg" alt="Curso de Francês"> <!-- Substituir pelo caminho da imagem -->
+                        <div class="flag">
+                            <img src="img/flag-fr.webp" alt="Bandeira da França"> 
+                        </div>
+                        <img src="img/frances.webp" alt="Curso de Francês"> 
                         <h3>Francês</h3>
                         <p>Nosso curso de Francês oferece uma abordagem prática e interativa para quem deseja aprender essa língua fascinante e amplamente falada ao redor do mundo.</p>
                         <a href="#">Conheça o curso</a>
                     </div>
                 </div>
             </section>
+            <!--Comentarios-->
+            <section class="comentarios-section">
+                <h2>O que nossos alunos dizem</h2>
+                <div class="comentarios-container">
+                    <div class="comentario-card">
+                        <img src="path-to-user1.jpg" alt="Foto do aluno"> <!-- Substituir pelo caminho da imagem do aluno -->
+                        <h4>Maria Clara</h4>
+                        <div class="estrelas">
+                            <span>&#9733;&#9733;&#9733;&#9733;&#9734;</span>
+                        </div>
+                        <p>O curso é excelente! Aprendi muito em pouco tempo e os professores são muito atenciosos.</p>
+                    </div>
+        
+                    <div class="comentario-card">
+                        <img src="path-to-user2.jpg" alt="Foto do aluno"> <!-- Substituir pelo caminho da imagem do aluno -->
+                        <h4>João Pedro</h4>
+                        <div class="estrelas">
+                            <span>&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+                        </div>
+                        <p>Gostei bastante da metodologia. As aulas ao vivo ajudam muito na interação.</p>
+                    </div>
+        
+                    <div class="comentario-card">
+                        <img src="path-to-user3.jpg" alt="Foto do aluno"> <!-- Substituir pelo caminho da imagem do aluno -->
+                        <h4>Ana Beatriz</h4>
+                        <div class="estrelas">
+                            <span>&#9733;&#9733;&#9733;&#9734;&#9734;</span>
+                        </div>
+                        <p>Os materiais são ótimos e bem organizados. Recomendo para todos que querem aprender idiomas!</p>
+                    </div>
+                </div>
+                <div class="navegacao-botoes">
+                    <button onclick="scrollLeft()">&#8592; Anterior</button>
+                    <button onclick="scrollRight()">Próximo &#8594;</button>
+                </div>
+            </section>
+        
+         
+            <!--Section contato-->
+            <section class="contato-section">
+                <div class="contato-banner">
+                    <h2>Experimente 2 Aulas Grátis!</h2>
+                    <p>Conheça a metodologia LinguasFera e descubra o prazer de aprender um novo idioma.</p>
+                    <button>Eu quero!</button>
+                </div>
+                <form class="contato-form">
+                    <h2>Quero fazer 2 aulas grátis</h2>
+                    <label for="name">Nome*</label>
+                    <input type="text" id="name" name="name" required>
+        
+                    <label for="email">E-mail*</label>
+                    <input type="email" id="email" name="email" required>
+        
+                    <label for="phone">Telefone*</label>
+                    <input type="tel" id="phone" name="phone" required>
+        
+                    <label for="state">Estado*</label>
+                    <select id="state" name="state" required>
+                        <option value="">Selecione um estado</option>
+                        <option value="sp">São Paulo</option>
+                        <option value="rj">Rio de Janeiro</option>
+                        <!-- Adicionar mais estados aqui -->
+                    </select>
+        
+                    <label for="city">Cidade*</label>
+                    <select id="city" name="city" required>
+                        <option value="">Selecione uma cidade</option>
+                        <!-- Adicionar cidades dinamicamente -->
+                    </select>
+        
+                    <label for="unit">Unidade*</label>
+                    <select id="unit" name="unit" required>
+                        <option value="">Selecione uma unidade</option>
+                        <!-- Adicionar unidades dinamicamente -->
+                    </select>
+        
+                    <input type="checkbox" id="over12" name="over12" required>
+                    <label for="over12">Declaro ter mais de 12 anos</label>
+        
+                    <input type="checkbox" id="privacy" name="privacy" required>
+                    <label for="privacy">Concordo com a política de privacidade</label>
+        
+                    <button type="submit">Solicitar contato</button>
+        
+                    <small>*Campos obrigatórios</small>
+                </form>
+            </section>
+
+            
 
         </main>
         
