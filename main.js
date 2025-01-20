@@ -1,24 +1,33 @@
-document.addEventListener('DOMContentLoaded', function() {
-    // Seleciona todas as cards para adicionar interatividade
-    const cards = document.querySelectorAll('.card');
+/*-----js-Detahes do cursos-----*/
+const cursoButtons = document.querySelectorAll('.cursos__button');
+const cursoDetalhes = document.querySelectorAll('.curso-detalhes');
+const closeButtons = document.querySelectorAll('.curso-detalhes-close');
 
-    // Itera sobre cada card e adiciona o evento de clique para alternar a classe 'open'
-    cards.forEach(card => {
-        const toggleButton = card.querySelector('.toggle-button');
-
-        toggleButton.addEventListener('click', function() {
-            cards.forEach(otherCard => {
-                if (otherCard !== card) {
-                    otherCard.classList.remove('open');
-                    otherCard.querySelector('.toggle-button').classList.remove('rotated');
-                }
-            });
-            card.classList.toggle('open');
-            toggleButton.classList.toggle('rotated');
-        });
+cursoButtons.forEach((button, index) => {
+    button.addEventListener('click', () => {
+        cursoDetalhes[index].style.display = 'block';
+        document.body.insertAdjacentHTML('beforeend', '<div class="curso-detalhes-overlay"></div>');
     });
 });
 
+closeButtons.forEach((closeButton, index) => {
+    closeButton.addEventListener('click', () => {
+        cursoDetalhes[index].style.display = 'none';
+        const overlay = document.querySelector('.curso-detalhes-overlay');
+        if (overlay) overlay.remove();
+    });
+});
+
+document.body.addEventListener('click', (event) => {
+    if (event.target.classList.contains('curso-detalhes-overlay')) {
+        document.querySelectorAll('.curso-detalhes').forEach(detalhe => detalhe.style.display = 'none');
+        event.target.remove();
+    }
+});
+
+
+
+/* ------Js-Sobre---------*/
 document.addEventListener('DOMContentLoaded', function() {
     const cards = document.querySelectorAll('.card');
     
@@ -48,10 +57,17 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 
+
+
 let isMouseDown = false;
 let startX;
 let scrollLeftStart;
 
+/*-------- Js-Comentarios-----*/
+
+
+
+/* segurar e passar com o mouse*/ 
 const container = document.querySelector('.comentarios-container');
 
 container.addEventListener('mousedown', (e) => {
@@ -79,20 +95,23 @@ container.addEventListener('mousemove', (e) => {
     container.scrollLeft = scrollLeftStart - walk;
 });
 
-function scrollLeft() {
-    container.scrollBy({
-        left: -300,
-        behavior: 'smooth'
-    });
-}
+/* botão esquerda e direita*/
+const comentariosContainer = document.querySelector('.comentarios-container');
+const leftButton = document.querySelector('.navegacao-esquerda');
+const rightButton = document.querySelector('.navegacao-direita');
 
-function scrollRight() {
-    container.scrollBy({
-        left: 300,
-        behavior: 'smooth'
-    });
-}
+leftButton.addEventListener('click', () => {
+    comentariosContainer.scrollBy({ left: -300, behavior: 'smooth' });
+});
 
+rightButton.addEventListener('click', () => {
+    comentariosContainer.scrollBy({ left: 300, behavior: 'smooth' });
+});
+
+
+
+
+/*-------Js-Formulario-------- */
 document.getElementById('state').addEventListener('change', function() {
     const state = this.value;
     const citySelect = document.getElementById('city');
@@ -187,3 +206,5 @@ document.getElementById('state').addEventListener('change', function() {
         citySelect.appendChild(option);
     });
 });
+
+
