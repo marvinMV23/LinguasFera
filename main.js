@@ -1,10 +1,8 @@
-
-
-
-
 document.addEventListener('DOMContentLoaded', function() {
+    // Seleciona todas as cards para adicionar interatividade
     const cards = document.querySelectorAll('.card');
 
+    // Itera sobre cada card e adiciona o evento de clique para alternar a classe 'open'
     cards.forEach(card => {
         const toggleButton = card.querySelector('.toggle-button');
 
@@ -24,18 +22,55 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 
+// Variáveis para controlar o clique e arraste da área de comentários
+let isMouseDown = false;
+let startX;
+let scrollLeftStart;
 
+// Seleciona o contêiner dos comentários
+const container = document.querySelector('.comentarios-container');
 
-
-
-document.querySelector('.cursos__button').addEventListener('click', function () {
-    document.querySelector('.curso-detalhes').style.display = 'block';
-    document.querySelector('.curso-detalhes-overlay').style.display = 'block';
+// Adiciona evento para iniciar o clique e arraste
+container.addEventListener('mousedown', (e) => {
+    isMouseDown = true;
+    startX = e.pageX - container.offsetLeft;
+    scrollLeftStart = container.scrollLeft;
+    container.style.cursor = 'grabbing'; // Muda o cursor quando está arrastando
 });
 
-document.querySelector('.curso-detalhes-close').addEventListener('click', function () {
-    document.querySelector('.curso-detalhes').style.display = 'none';
-    document.querySelector('.curso-detalhes-overlay').style.display = 'none';
+// Adiciona evento para quando o mouse sai do contêiner
+container.addEventListener('mouseleave', () => {
+    isMouseDown = false;
+    container.style.cursor = 'default'; // Volta o cursor ao normal
 });
 
+// Adiciona evento para quando o mouse é solto
+container.addEventListener('mouseup', () => {
+    isMouseDown = false;
+    container.style.cursor = 'default'; // Volta o cursor ao normal
+});
 
+// Adiciona evento para o movimento do mouse, que realiza a rolagem horizontal
+container.addEventListener('mousemove', (e) => {
+    if (!isMouseDown) return; // Se o botão do mouse não estiver pressionado, não faz nada
+    e.preventDefault();
+    const x = e.pageX - container.offsetLeft;
+    const walk = (x - startX) * 2; // Ajusta a velocidade de rolagem
+    container.scrollLeft = scrollLeftStart - walk;
+});
+
+// Função para rolar para a esquerda
+function scrollLeft() {
+    container.scrollBy({
+        left: -300,
+        behavior: 'smooth'
+    });
+}
+
+// Função para rolar para a direita
+function scrollRight() {
+    container.scrollBy({
+        left: 300,
+        behavior: 'smooth'
+    });
+}
