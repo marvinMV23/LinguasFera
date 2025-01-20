@@ -537,19 +537,36 @@ h1 {
     padding: 50px 20px;
     background-color: #f5f5f5;
 }
+
 .contato-section {
     padding: 50px 20px;
     background-color: #f4f4f4;
 }
 
 .contato-banner {
-    background: #007bff;
+    background:#003366;
     color: white;
     padding: 30px;
     border-radius: 8px;
     text-align: center;
-    margin-bottom: 30px; /* Adiciona um espaçamento abaixo do banner */
+    margin-bottom: 30px; 
 }
+
+.contato-image {
+    max-width: 30%;
+    height: auto;
+    flex: 1;
+}
+
+.contato-form-image-container {
+    display: flex;
+    align-items: stretch;
+    gap: 20px;
+    
+    
+}
+
+
 
 .contato-form-container {
     max-width: 500px;
@@ -557,21 +574,23 @@ h1 {
 }
 
 .contato-form {
-    background: #fff;
+    background: #003366;
     padding: 20px;
     border-radius: 8px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 10px rgba(255, 255, 255, 0.1);
 }
 
 .contato-form h2 {
     font-size: 1.5em;
     margin-bottom: 20px;
+    color: #fff;
 }
 
 .contato-form label {
+    top: 1px;
     font-size: 1em;
-    color: #333;
-    margin-bottom: 5px;
+    color: #fff;
+    margin-bottom: 8px;
 }
 
 .contato-form input,
@@ -580,12 +599,12 @@ h1 {
     padding: 10px;
     margin-bottom: 15px;
     border-radius: 5px;
-    border: 1px solid #ccc;
+    border: 1px solid #f7f7f7;
 }
 
 .contato-form button {
-    background-color: #007bff;
-    color: white;
+    background-color: #fff;
+    color: rgb(0, 0, 0);
     padding: 10px 20px;
     border-radius: 5px;
     border: none;
@@ -594,20 +613,20 @@ h1 {
 }
 
 .contato-form button:hover {
-    background-color: #0056b3;
+    background-color: #4852e073;
 }
 
 .contato-form small {
     font-size: 0.9em;
-    color: #888;
+    color: #fdf8f8;
 }
 
 .formas-pagamento {
     background: #fff;
     padding: 20px;
     border-radius: 8px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    margin-top: 30px; /* Espaço entre o banner e as formas de pagamento */
+    box-shadow: 0 4px 10px #fff;
+    margin-top: 30px; 
 }
 
 .formas-pagamento h3 {
@@ -636,16 +655,11 @@ h1 {
 
 
 
-
-
-
-
-
 /* Footer Styles */
 .footer {
     background-color: #003366;
     color: white;
-    padding: 1rem 0; /* Menor altura */
+    padding: rem 0; 
     text-align: center;
   }
   
@@ -654,14 +668,14 @@ h1 {
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
-    max-width: 1200px;
+    max-width: 1800px;
     margin: 0 auto;
     padding: 0 1rem;
   }
   
   /* Logo */
   .footer-logo img {
-    width: 120px; 
+    width: 100px; 
   }
   
   /* Contato */
@@ -682,28 +696,31 @@ h1 {
   
   
   .footer-social {
-    text-align: right;
+    text-align: center;
   }
   
   .footer-social h3 {
-    font-size: 1.2rem;
+    top: px;
+    text-align: center;
+    font-size: 1rem;
     margin-bottom: 0.5rem;
   }
   
-  .home__social {
+  .footer__icons {
     display: flex;
     justify-content: flex-end;
     gap: 0.5rem;
   }
   
-  .home__social-icon {
+  .footer-icon{
     color: white;
     font-size: 1.5rem;
     transition: color 0.3s, transform 0.3s;
+    text-align: center;
   }
   
-  .home__social-icon:hover {
-    color: #ffd700;
+  .footer-icon:hover {
+    color: #ffffff;
     transform: scale(1.2);
   }
   
@@ -728,7 +745,7 @@ h1 {
       text-align: center;
     }
   
-    .home__social {
+    .footer__social {
       justify-content: center;
     }
   }
