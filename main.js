@@ -1,3 +1,23 @@
+// Nav- menu para tela de celular
+function toggleMenu() {
+    const nav = document.querySelector('.nav');
+    nav.classList.toggle('active');
+  }
+  
+  document.addEventListener('click', function (event) {
+    const nav = document.querySelector('.nav');
+    const menu = document.querySelector('.menu');
+    
+   
+    if (!nav.contains(event.target) && !menu.contains(event.target)) {
+      nav.classList.remove('active');
+    }
+  });
+
+
+/*-----Cursos---------*/
+
+
 /*-----js-Detahes do cursos-----*/
 const cursoButtons = document.querySelectorAll('.cursos__button');
 const cursoDetalhes = document.querySelectorAll('.curso-detalhes');
@@ -23,6 +43,19 @@ document.body.addEventListener('click', (event) => {
         document.querySelectorAll('.curso-detalhes').forEach(detalhe => detalhe.style.display = 'none');
         event.target.remove();
     }
+});
+
+/*botão esquerda direita cursos*/
+const ContainerCurso = document.querySelector('.curso-cards');
+const leftButtonCurso = document.querySelector('.navegacao-esquerda-cursos');
+const rightButtonCurso = document.querySelector('.navegacao-direita-cursos');
+
+leftButtonCurso.addEventListener('click', () => {
+    ContainerCurso.scrollBy({ left: -300, behavior: 'smooth' });
+});
+
+rightButtonCurso.addEventListener('click', () => {
+    ContainerCurso.scrollBy({ left: 300, behavior: 'smooth' });
 });
 
 
@@ -58,42 +91,11 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 
-
 let isMouseDown = false;
 let startX;
 let scrollLeftStart;
 
 /*-------- Js-Comentarios-----*/
-
-
-
-/* segurar e passar com o mouse*/ 
-const container = document.querySelector('.comentarios-container');
-
-container.addEventListener('mousedown', (e) => {
-    isMouseDown = true;
-    startX = e.pageX - container.offsetLeft;
-    scrollLeftStart = container.scrollLeft;
-    container.style.cursor = 'grabbing'; 
-});
-
-container.addEventListener('mouseleave', () => {
-    isMouseDown = false;
-    container.style.cursor = 'default'; 
-});
-
-container.addEventListener('mouseup', () => {
-    isMouseDown = false;
-    container.style.cursor = 'default'; 
-});
-
-container.addEventListener('mousemove', (e) => {
-    if (!isMouseDown) return; 
-    e.preventDefault();
-    const x = e.pageX - container.offsetLeft;
-    const walk = (x - startX) * 2; 
-    container.scrollLeft = scrollLeftStart - walk;
-});
 
 /* botão esquerda e direita*/
 const comentariosContainer = document.querySelector('.comentarios-container');
