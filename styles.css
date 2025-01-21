@@ -751,3 +751,44 @@ h1 {
     }
   }
 
+  @media (max-width: 1024px) {
+    .nav {
+        flex-direction: column;
+        align-items: center;
+    }
+    .curso-cards {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media (max-width: 768px) {
+    .header .container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .curso-card {
+        width: 90%;
+        margin-bottom: 20px;
+    }
+    .comentario-card {
+        min-width: 100%;
+    }
+    .contato-form-container {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .inicio h1 {
+        font-size: 1.5rem;
+    }
+    .botao {
+        font-size: 1rem;
+    }
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
