@@ -5,7 +5,7 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="styles.css" >
+        <link rel="stylesheet" href="src/styles.css" >
         <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
 
         <title>LínguasFera - Escola de idiomas</title>
@@ -62,7 +62,7 @@
                     <div class="flag">
                         <img src="img/flag-cursos/flag.webp" alt="Bandeira dos EUA">
                     </div>
-                    <img src="img/ingles.webp" alt="Curso de Inglês">
+                    <img src="img/img-cursos/ingles.webp" alt="Curso de Inglês">
                     <h3>Inglês</h3>
                     <p>O curso de Inglês da LinguasFera foi desenvolvido para atender desde iniciantes até alunos avançados, com foco no desenvolvimento das quatro principais habilidades: fala, leitura, escrita e compreensão auditiva.</p>
                     <span class="button button--flex cursos__button">
@@ -98,7 +98,7 @@
                     <div class="flag">
                         <img src="img/flag-cursos/flag-es.webp" alt="Bandeira da Espanha">
                     </div>
-                    <img src="img/SPAIN.webp" alt="Curso de Espanhol">
+                    <img src="img/img-cursos/SPAIN.webp" alt="Curso de Espanhol">
                     <h3>Espanhol</h3>
                     <p>O curso de Espanhol da LinguasFera é ideal para quem deseja aprender uma das línguas mais faladas do mundo de forma prática e eficiente. Com foco em conversação e situações do dia a dia.</p>
                     <span class="button button--flex cursos__button">
@@ -134,7 +134,7 @@
                     <div class="flag">
                         <img src="img/flag-cursos/flag-fr.webp" alt="Bandeira da França">
                     </div>
-                    <img src="img/frances.webp" alt="Curso de Francês">
+                    <img src="img/img-cursos/frances.webp" alt="Curso de Francês">
                     <h3>Francês</h3>
                     <p>Nosso curso de Francês oferece uma abordagem prática e interativa para quem deseja aprender essa língua fascinante e amplamente falada ao redor do mundo.</p>
                     <span class="button button--flex button--small button--link cursos__button">
@@ -170,7 +170,7 @@
                     <div class="flag">
                         <img src="img/flag-cursos/flag-ch.webp" alt="Bandeira da China">
                     </div>
-                    <img src="img/CHINES.webp" alt="Curso de Chinês">
+                    <img src="img/img-cursos/CHINES.webp" alt="Curso de Chinês">
                     <h3>Chinês</h3>
                     <p>Nosso curso de Chinês oferece uma abordagem prática e interativa para quem deseja aprender essa língua fascinante e amplamente falada ao redor do mundo.</p>
                     <span class="button button--flex button--small button--link cursos__button">
@@ -206,10 +206,10 @@
                     <div class="flag">
                         <img src="img/flag-cursos/flag-it.webp" alt="Bandeira da Itália">
                     </div>
-                    <img src="img/ITALIANO.webp" alt="Curso de Italiano">
+                    <img src="img/img-cursos/ITALIANO.webp" alt="Curso de Italiano">
                     <h3>Italiano</h3>
                     <p>O curso de Italiano da LinguasFera oferece uma experiência imersiva, permitindo que você aprenda o idioma do país da arte, cultura e culinária de forma prática e divertida.</p>
-                    <span class="button button--flex button--small button--link cursos__button">
+                    <span class="cursos__button">
                         Conheça o curso
                         <i class="uil uil-arrow-right button__icon"></i>
                     </span>
@@ -242,7 +242,7 @@
                     <div class="flag">
                         <img src="img/flag-cursos/flag-br.webp" alt="Bandeira do Brasil">
                     </div>
-                    <img src="img/PORTUGUES.webp" alt="Curso de Português">
+                    <img src="img/img-cursos/PORTUGUES.webp" alt="Curso de Português">
                     <h3>Português</h3>
                     <p>Nosso curso de Português-BR é perfeito para estrangeiros que desejam dominar a língua e se conectar com a cultura vibrante do Brasil.</p>
                     <span class="button button--flex button--small button--link cursos__button">
@@ -525,7 +525,9 @@
                         <input type="checkbox" id="privacy" name="privacy" required>
                         <label for="privacy">Concordo com a política de privacidade</label>
         
-                        <button type="submit">Solicitar contato</button>
+                        <button type="button" id="solicitar-contato">Solicitar contato</button>
+                        <small id="mensagem-sucesso" class="mensagem-oculta">Solicitação enviada com sucesso!</small>
+
         
                         <small>*Campos obrigatórios</small>
                     </form>
@@ -583,7 +585,7 @@
 
 
 
-        <script src="main.js"></script>
+        <script src="src/main.js"></script>
         
        
     </body>

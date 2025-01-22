@@ -91,6 +91,8 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 
+
+
 let isMouseDown = false;
 let startX;
 let scrollLeftStart;
@@ -210,3 +212,12 @@ document.getElementById('state').addEventListener('change', function() {
 });
 
 
+document.getElementById('solicitar-contato').addEventListener('click', function () {
+    const mensagem = document.getElementById('mensagem-sucesso');
+    mensagem.classList.add('mensagem-exibida');
+
+    // Remover a mensagem após 3 segundos
+    setTimeout(() => {
+        mensagem.classList.remove('mensagem-exibida');
+    }, 3000);
+});
