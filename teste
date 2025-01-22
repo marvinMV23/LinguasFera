@@ -1,5 +1,5 @@
 .comentarios-section {
-    background: url(img/capaComentarios.jpg) no-repeat center center/cover;
+    background: url(img/capaContato.jpg) no-repeat center center/cover;
     padding: 50px 20px;
     color: #ffffff;
     text-align: center;

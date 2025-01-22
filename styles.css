@@ -79,10 +79,10 @@ h1 {
         display: none;
         flex-direction: column;
         position: absolute;
-        top: 60px;
+        top: 50px;
         right: 20px;
         background-color: #ffffff;
-        box-shadow: 0 4px 10px rgba(0, 0,  0, 0.1);
+        box-shadow: 0 4px 9px rgba(0, 0,  0, 0.1);
         padding: 20px;
         border-radius: 8px;
         width: 200px;
@@ -179,6 +179,33 @@ h1 {
     transform: translateY(-10px); /* Levanta o card */
 
 
+}
+
+@media (max-width: 300px ) {
+    .inicio {
+        height: auto;
+        padding: 10px;
+        text-align: center;
+        top: -1000px;
+    }
+    
+    .inicio .container {
+        padding: 20px;
+        text-align: center;
+    }
+
+    .inicio h1 {
+        font-size: 30px;
+    }
+
+    .inicio p {
+        font-size: 16px;
+    }
+
+    .botao {
+        font-size: 1em;
+        padding: 8px 16px;
+    }
 }
 
 
@@ -384,8 +411,8 @@ h1 {
 
 @media (max-width: 1800px) {
     .curso{
-        background-attachment: scroll; /* Altera o comportamento em telas pequenas */
-        background-size:cover
+        background-attachment; /* Altera o comportamento em telas pequenas */
+        background-size:cover;
 
     }
 
@@ -393,8 +420,10 @@ h1 {
         display: flex; /* Alinha os cards em linha */
         flex-direction: row; /* Direção horizontal */
         gap: 20px; /* Espaçamento entre os cards */
+        min-width: 1px;
+
         overflow-x: auto; /* Permite rolagem horizontal */
-        padding: 10px;
+        padding: 0px;
         scroll-behavior: smooth; /* Rola de forma suave */
     }
 
@@ -855,7 +884,7 @@ h1 {
 }
   
   /* Responsividade */
-@media (max-width: 2000px) {
+@media (max-width: 600px) {
     .footer-container {
       flex-direction: column;
       align-items: center;
