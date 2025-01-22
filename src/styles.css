@@ -190,10 +190,8 @@ h1 {
 .curso {
     padding: 10px;
     text-align: center;
-    background-image: url('../src/img/capaContato.jpg'); 
-    background-size: cover; 
+    background: url('../src/img/capaContato.jpg') no-repeat center center/cover; 
     background-position: center; 
-    background-repeat: no-repeat; 
     background-color: rgb(114, 114, 114); 
     background-blend-mode: overlay; 
     
