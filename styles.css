@@ -75,12 +75,15 @@ h1 {
 }
 
 @media (max-width: 900px){
+    .header .container {
+        flex-direction: column;
+        align-items: center;
+    }
     .nav{
         display: none;
         flex-direction: column;
         position: absolute;
         top: 60px;
-        right: 20px;
         background-color: #ffffff;
         box-shadow: 0 4px 10px rgba(0, 0,  0, 0.1);
         padding: 20px;
@@ -778,6 +781,15 @@ h1 {
     margin-right: 10px;
 }
 
+@media (max-width: 700px) {
+    .contato-form-image-container{
+        flex-wrap: wrap;
+        align-items: stretch;
+        justify-content: space-between;
+        gap: 20px;
+    }
+}
+
 
 
 /* Footer Styles */
@@ -880,10 +892,7 @@ h1 {
  
 
 @media (max-width: 768px) {
-    .header .container {
-        flex-direction: column;
-        align-items: center;
-    }
+   
    
     .comentario-card {
         min-width: 100%;
