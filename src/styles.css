@@ -405,7 +405,6 @@ h1 {
         flex-shrink: 0; 
     
     }
-
     .curso-cards::-webkit-scrollbar {
         display: none; 
     }
