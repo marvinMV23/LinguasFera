@@ -127,7 +127,7 @@ h1 {
 
 /*------Styles-Inicio-----*/
 .inicio{
-    background: url(/img/capaInicio.jpg) no-repeat center center/cover;
+    background: url('../src/img/capaInicio.jpg') no-repeat center center/cover;
     height: 85vh;
     display: flex;
     justify-content: left;
@@ -190,7 +190,7 @@ h1 {
 .curso {
     padding: 10px;
     text-align: center;
-    background-image: url('/img/capaContato.jpg'); 
+    background-image: url('../src/img/capaContato.jpg'); 
     background-size: cover; 
     background-position: center; 
     background-repeat: no-repeat; 
@@ -454,7 +454,7 @@ h1 {
 /*-----style-sobre-------*/
 
 .sobre {
-    background-image: url('/img/capaSobre.jpg'); 
+    background-image: url('../src/img/capaSobre.jpg'); 
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -565,7 +565,7 @@ h1 {
 /*----------------Styles-comentarios-------*/
 
 .comentarios-section {
-    background: url(/img/capaComentarios.jpg) no-repeat center center/cover;
+    background: url('../src/img/capaComentarios.jpg') no-repeat center center/cover;
     padding: 50px 20px;
     color: #ffffff;
     text-align: center;
@@ -660,7 +660,7 @@ h1 {
 /*----------------Styles-contato-------*/
 
 .contato-section {
-    background: url(/img/capaContato.jpg) no-repeat center center/cover;
+    background: url('../src/img/capaContato.jpg') no-repeat center center/cover;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
