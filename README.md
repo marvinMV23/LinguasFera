@@ -1,38 +1,38 @@
-#LínguasFera - Plataforma de Aprendizado de Idiomas
+## LínguasFera - Plataforma de Aprendizado de Idiomas
 
-Bem-vindo ao repositório da LínguasFera, um site dedicado ao aprendizado de idiomas. Aqui você encontra uma solução fácil de usar para explorar cursos, conectar-se com instrutores e acessar conteúdo de alta qualidade para melhorar suas habilidades linguísticas.
+    Bem-vindo ao repositório da LínguasFera, um site dedicado ao aprendizado de idiomas. Aqui você encontra uma solução fácil de usar para explorar cursos, conectar-se com instrutores e acessar conteúdo de alta qualidade para melhorar suas habilidades linguísticas.
 
-Visão Geral
+ ## Visão Geral
 
-O projeto é um site responsivo e intuitivo, desenvolvido para oferecer aos usuários uma experiência fluida ao buscar informações sobre cursos de idiomas. Ele inclui seções para:
+    O projeto é um site responsivo e intuitivo, desenvolvido para oferecer aos usuários uma experiência fluida ao buscar informações sobre cursos de idiomas. Ele inclui seções para:
 
-Listagem de cursos disponíveis.
+    Listagem de cursos disponíveis.
 
-Formulário de contato.
+    Formulário de contato.
 
-Links para redes sociais.
+    Links para redes sociais.
 
-Funcionalidades interativas de navegação entre conteúdos.
+    Funcionalidades interativas de navegação entre conteúdos.
 
-Funcionalidades Principais
+    Funcionalidades Principais
 
-Cursos Destacados:
+    Cursos Destacados:
 
-Informações detalhadas sobre cursos de diferentes idiomas como Inglês, Italiano, Chinês, e Português.
+    Informações detalhadas sobre cursos de diferentes idiomas como Inglês, Italiano, Chinês, e Português.
 
-Navegação intuitiva entre cards de cursos.
+    Navegação intuitiva entre cards de cursos.
 
-Formulário de Contato:
+    Formulário de Contato:
 
-Permite que os usuários entrem em contato preenchendo campos como nome, email, telefone, estado e cidade.
+    Permite que os usuários entrem em contato preenchendo campos como nome, email, telefone, estado e cidade.
 
-Dropdowns dinâmicos para seleção de estado e cidade (a implementar).
+    Dropdowns dinâmicos para seleção de estado e cidade (a implementar).
 
-Integração com Redes Sociais:
+    Integração com Redes Sociais:
 
-Links para Instagram, Facebook, e WhatsApp no rodapé.
+    Links para Instagram, Facebook, e WhatsApp no rodapé.
 
-Tecnologias Utilizadas
+## Tecnologias Utilizadas
 
 HTML: Para estruturação do site.
 
