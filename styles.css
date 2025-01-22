@@ -79,10 +79,10 @@ h1 {
         display: none;
         flex-direction: column;
         position: absolute;
-        top: 50px;
+        top: 60px;
         right: 20px;
         background-color: #ffffff;
-        box-shadow: 0 4px 9px rgba(0, 0,  0, 0.1);
+        box-shadow: 0 4px 10px rgba(0, 0,  0, 0.1);
         padding: 20px;
         border-radius: 8px;
         width: 200px;
@@ -181,38 +181,11 @@ h1 {
 
 }
 
-@media (max-width: 300px ) {
-    .inicio {
-        height: auto;
-        padding: 10px;
-        text-align: center;
-        top: -1000px;
-    }
-    
-    .inicio .container {
-        padding: 20px;
-        text-align: center;
-    }
-
-    .inicio h1 {
-        font-size: 30px;
-    }
-
-    .inicio p {
-        font-size: 16px;
-    }
-
-    .botao {
-        font-size: 1em;
-        padding: 8px 16px;
-    }
-}
-
 
 /*---styles-cursos---*/
 
 .curso {
-    padding: 50px;
+    padding: 10px;
     text-align: center;
     background-image: url('img/capaContato.jpg'); 
     background-size: cover; 
@@ -234,12 +207,8 @@ h1 {
 
 .curso-cards{
     display: flex;
-    flex-direction: row;
-    justify-content: center;
-    gap: 20px;
-    overflow-x: auto;
-    padding: 10px;
-    scroll-behavior: smooth;
+    overflow-x: scroll;
+    gap: 20px; 
 }
 
 .curso-card {
@@ -409,36 +378,34 @@ h1 {
 
 
 
-@media (max-width: 1800px) {
+@media (max-width: 1900px) {
     .curso{
-        background-attachment; /* Altera o comportamento em telas pequenas */
+        background-attachment: scroll; 
         background-size:cover;
-
+    
     }
 
     .curso-cards {
-        display: flex; /* Alinha os cards em linha */
-        flex-direction: row; /* Direção horizontal */
-        gap: 20px; /* Espaçamento entre os cards */
-        min-width: 1px;
-
-        overflow-x: auto; /* Permite rolagem horizontal */
-        padding: 0px;
-        scroll-behavior: smooth; /* Rola de forma suave */
+        display: flex;
+        overflow-x: scroll;
+        gap: 20px;  
     }
 
+
     .curso-card {
-        min-width: 250px; /* Define a largura mínima do card */
-        flex-shrink: 0; /* Impede que o card diminua além do tamanho mínimo */
+        min-width: 250px; 
+        flex-shrink: 0; 
+    
     }
 
     .curso-cards::-webkit-scrollbar {
-        display: none; /* Oculta a barra de rolagem no navegador Webkit */
+        display: none; 
     }
 
     .curso-cards {
-        scrollbar-width: none; /* Oculta a barra de rolagem em navegadores compatíveis */
+        scrollbar-width: none; 
     }
+    
     .navegacao-botoes-cursos button i {
         font-size: 1.2em;
     }
@@ -465,6 +432,9 @@ h1 {
     }
     
 }
+
+
+
 
 
 
@@ -527,6 +497,7 @@ h1 {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    align-items: self-start;
     gap: 10px;
 }
 
@@ -540,6 +511,7 @@ h1 {
     padding: 20px;
     text-align: left;
     transition: transform 0.3s ease;
+    cursor: pointer;
 }
 
 .card:hover{
@@ -702,7 +674,8 @@ h1 {
 }
 
 .contato-image {
-    max-width: 30%;
+    width: 100%;
+    max-width: 400px;
     height: auto;
     flex: 1;
     
@@ -711,6 +684,7 @@ h1 {
 .contato-form-image-container {
     display: flex;
     align-items: stretch;
+    justify-content: space-between;
     gap: 20px;
     
     
@@ -721,6 +695,7 @@ h1 {
 .contato-form-container {
     max-width: 500px;
     margin: 0 auto;
+    flex: 1;
 }
 
 .contato-form {
