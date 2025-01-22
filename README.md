@@ -38,4 +38,4 @@ HTML: Para estruturação do site.
 
 CSS: Para estilização e responsividade (suporte ao arquivo styles.css).
 
-JavaScript: Para funções interativas como scroll de cards e validação de formulários.
+JavaScript: Para funções interativas como scroll de cards e validação de formulários.# LinguasFera
