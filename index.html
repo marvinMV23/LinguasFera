@@ -31,8 +31,19 @@
                     <i class="uil uil-bars"></i>
 
                 </div>       
-            </div>            
+            </div> 
+                 
         </header>
+        <!--Section-carrinho--->
+        <button class="icone-carrinho" onclick="toggleCarrinho()">
+            <i class="fa fa-shopping-cart"></i> <!-- ícone do carrinho -->
+        </button>
+        <section class="carrinho">
+            <h2>Seu Carrinho</h2>
+            <ul id="carrinho-lista"></ul>
+            <div id="carrinho-total">Total: R$ 0,00</div>
+        </section>
+      
 
         <!-- section-Inicio-->
         <section>
@@ -66,10 +77,17 @@
                     <img src="src/img/img-cursos/ingles.webp" alt="Curso de Inglês">
                     <h3>Inglês</h3>
                     <p>O curso de Inglês da LinguasFera foi desenvolvido para atender desde iniciantes até alunos avançados, com foco no desenvolvimento das quatro principais habilidades: fala, leitura, escrita e compreensão auditiva.</p>
-                    <span class="button button--flex cursos__button">
+                    <span class="cursos__button">
                         Conheça o curso
                         <i class="uil uil-arrow-right button__icon"></i>
                     </span>
+                    <button 
+                        class="adicionar-carrinho" 
+                        data-nome="Inglês" 
+                        data-preco="30">
+                        Adicionar ao Carrinho - R$30
+                    </button>
+
                     <div class="curso-detalhes">
                         <div class="curso-detalhes-content">
                             <h4 class="curso-detalhes-titulo">Inglês</h4>
@@ -90,6 +108,7 @@
                                 <h3>Níveis Disponíveis</h3>
                                 <p>Iniciante, Intermediário e Avançado</p>
                             </ul>
+                            
                         </div>
                     </div>
                 </div>
@@ -102,10 +121,16 @@
                     <img src="src/img/img-cursos/SPAIN.webp" alt="Curso de Espanhol">
                     <h3>Espanhol</h3>
                     <p>O curso de Espanhol da LinguasFera é ideal para quem deseja aprender uma das línguas mais faladas do mundo de forma prática e eficiente. Com foco em conversação e situações do dia a dia.</p>
-                    <span class="button button--flex cursos__button">
+                    <span class=" cursos__button">
                         Conheça o curso
                         <i class="uil uil-arrow-right button__icon"></i>
                     </span>
+                    <button 
+                        class="adicionar-carrinho" 
+                        data-nome="Inglês" 
+                        data-preco="30">
+                        Adicionar ao Carrinho - R$30
+                    </button>
                     <div class="curso-detalhes">
                         <div class="curso-detalhes-content">
                             <h4 class="curso-detalhes-titulo">Espanhol</h4>
@@ -126,6 +151,7 @@
                                 <h3>Níveis Disponíveis</h3>
                                 <p>Iniciante, Intermediário e Avançado</p>
                             </ul>
+                            
                         </div>
                     </div>
                 </div>
@@ -138,10 +164,16 @@
                     <img src="src/img/img-cursos/frances.webp" alt="Curso de Francês">
                     <h3>Francês</h3>
                     <p>Nosso curso de Francês oferece uma abordagem prática e interativa para quem deseja aprender essa língua fascinante e amplamente falada ao redor do mundo.</p>
-                    <span class="button button--flex button--small button--link cursos__button">
+                    <span class=" cursos__button">
                         Conheça o curso
                         <i class="uil uil-arrow-right button__icon"></i>
                     </span>
+                    <button 
+                        class="adicionar-carrinho" 
+                        data-nome="Francês" 
+                        data-preco="30">
+                        Adicionar ao Carrinho - R$30
+                    </button>
                     <div class="curso-detalhes">
                         <div class="curso-detalhes-content">
                             <h4 class="curso-detalhes-titulo">Francês</h4>
@@ -174,10 +206,16 @@
                     <img src="src/img/img-cursos/CHINES.webp" alt="Curso de Chinês">
                     <h3>Chinês</h3>
                     <p>Nosso curso de Chinês oferece uma abordagem prática e interativa para quem deseja aprender essa língua fascinante e amplamente falada ao redor do mundo.</p>
-                    <span class="button button--flex button--small button--link cursos__button">
+                    <span class=" cursos__button">
                         Conheça o curso
                         <i class="uil uil-arrow-right button__icon"></i>
                     </span>
+                    <button 
+                        class="adicionar-carrinho" 
+                        data-nome="Chinês" 
+                        data-preco="30">
+                        Adicionar ao Carrinho - R$30
+                    </button>
                     <div class="curso-detalhes">
                         <div class="curso-detalhes-content">
                             <h4 class="curso-detalhes-titulo">Chinês</h4>
@@ -198,6 +236,7 @@
                                 <h3>Níveis Disponíveis</h3>
                                 <p>Iniciante, Intermediário e Avançado</p>
                             </ul>
+                            
                         </div>
                     </div>
                 </div>
@@ -214,6 +253,12 @@
                         Conheça o curso
                         <i class="uil uil-arrow-right button__icon"></i>
                     </span>
+                    <button 
+                        class="adicionar-carrinho" 
+                        data-nome="Italiano" 
+                        data-preco="30">
+                        Adicionar ao Carrinho - R$30
+                    </button>
                     <div class="curso-detalhes">
                         <div class="curso-detalhes-content">
                             <h4 class="curso-detalhes-titulo">Italiano</h4>
@@ -233,6 +278,7 @@
                                 <p>Segunda a Sexta</p>
                                 <h3>Níveis Disponíveis</h3>
                                 <p>Iniciante, Intermediário e Avançado</p>
+                            
                             </ul>
                         </div>
                     </div>
@@ -246,10 +292,16 @@
                     <img src="src/img/img-cursos/PORTUGUES.webp" alt="Curso de Português">
                     <h3>Português</h3>
                     <p>Nosso curso de Português-BR é perfeito para estrangeiros que desejam dominar a língua e se conectar com a cultura vibrante do Brasil.</p>
-                    <span class="button button--flex button--small button--link cursos__button">
+                    <span class="button cursos__button">
                         Conheça o curso
                         <i class="uil uil-arrow-right button__icon"></i>
                     </span>
+                    <button 
+                        class="adicionar-carrinho" 
+                        data-nome="Português-Br" 
+                        data-preco="30">
+                        Adicionar ao Carrinho - R$30
+                    </button>
                     <div class="curso-detalhes">
                         <div class="curso-detalhes-content">
                             <h4 class="curso-detalhes-titulo">Português</h4>
@@ -287,6 +339,7 @@
             </div>
         </section>
 
+      
         
 
         <!--Section-sobre--->
@@ -527,7 +580,6 @@
                         <label for="privacy">Concordo com a política de privacidade</label>
         
                         <button type="button" id="solicitar-contato">Solicitar contato</button>
-                        <small id="mensagem-sucesso" class="mensagem-oculta">Solicitação enviada com sucesso!</small>
 
         
                         <small>*Campos obrigatórios</small>

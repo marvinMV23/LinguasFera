@@ -384,6 +384,78 @@ h1 {
     font-size: 1em;
 }
 
+
+.adicionar-carrinho{
+    cursor: pointer;
+    font-size: 1em;
+    color: #ffffff;
+    background-color: #34c25eb4;
+    border-radius: 5px;
+    padding: 5px 10px;
+    border: none;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+
+.carrinho {
+    background-color: #f8f8f8;
+    border: 1px solid #eeeeee;
+    padding: 1rem;
+    border-radius: 8px;
+    width: 300px;
+    position: fixed;
+    top: 150px;
+    right: 20px;
+    box-shadow: 0 4px 6px rgba(14, 12, 12, 0.87);
+}
+
+
+.carrinho h2 {
+    margin-top: 0;
+    font-size: 1.5rem;
+    color: #000000;
+}
+
+.carrinho ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.carrinho ul li {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #1b1414;
+}
+
+.carrinho button {
+    background-color: #ff4d4d;
+    border: none;
+    color: rgb(218, 197, 197);
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.carrinho button:hover {
+    background-color: #e04343;
+}
+
+.hidden {
+    display: none;
+  }
+
+#carrinho-total {
+    font-weight: bold;
+    margin-top: 10px;
+    font-size: 1.2rem;
+    color: #0f0d0d;
+}
+  
+
+
 @media (max-width: 1900px) {
     .curso{
         background-attachment: scroll; 
@@ -396,8 +468,6 @@ h1 {
         overflow-x: scroll;
         gap: 20px;  
     }
-
-
     .curso-card {
         min-width: 250px; 
         flex-shrink: 0; 
@@ -442,21 +512,11 @@ h1 {
 }
 
 
-
-
-
-
-
-
-
 /*-----style-sobre-------*/
 
 .sobre {
-    background-image: url('../src/img/capaSobre.jpg'); 
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    position: relative;
+    background: url('../src/img/capaSobre.jpg') no-repeat center center/cover; 
+    position:relative;
     padding: 50px 0;
     color: #fff; 
 }
@@ -481,12 +541,7 @@ h1 {
     margin: 0 auto;
     top: px;
 }
-@keyframes fadeIn {
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
+
 
 .sobre-content img {
     max-width: 1000px;

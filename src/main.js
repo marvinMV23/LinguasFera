@@ -60,6 +60,71 @@ rightButtonCurso.addEventListener('click', () => {
 
 
 
+/*Carrinho-Compras*/
+  // Array para armazenar os itens no carrinho
+let carrinho = [];
+
+  // Função para atualizar o carrinho na interface
+function atualizarCarrinho() {
+    const listaCarrinho = document.getElementById("carrinho-lista");
+    const totalCarrinho = document.getElementById("carrinho-total");
+    const carrinhoElemento = document.querySelector(".carrinho");
+
+    // Limpa a lista antes de recriá-la
+    listaCarrinho.innerHTML = "";
+
+    let total = 0;
+
+    // Adiciona cada item ao carrinho na interface
+    carrinho.forEach((curso, index) => {
+      total += curso.preco;
+
+      const li = document.createElement("li");
+      li.innerHTML = `
+        ${curso.nome} - R$ ${curso.preco.toFixed(2)}
+        <button onclick="removerDoCarrinho(${index})">Remover</button>
+      `;
+      listaCarrinho.appendChild(li);
+    });
+
+    // Atualiza o total
+    totalCarrinho.textContent = `Total: R$ ${total.toFixed(2)}`;
+
+    // Mostra ou esconde o carrinho
+    if (carrinho.length > 0) {
+      carrinhoElemento.classList.remove("hidden");
+    } else {
+      carrinhoElemento.classList.add("hidden");
+    }
+  }
+
+  // Função para adicionar um curso ao carrinho
+function adicionarAoCarrinho(nome, preco) {
+    carrinho.push({ nome, preco });
+    atualizarCarrinho();
+}
+
+  // Função para remover um item do carrinho
+function removerDoCarrinho(index) {
+    carrinho.splice(index, 1);
+    atualizarCarrinho();
+}
+
+
+
+  // Adicionar eventos aos botões "Adicionar ao Carrinho"
+document.querySelectorAll(".adicionar-carrinho").forEach((botao) => {
+    botao.addEventListener("click", (e) => {
+      const nomeCurso = e.target.dataset.nome; // Nome do curso
+      const precoCurso = parseFloat(e.target.dataset.preco); // Preço do curso
+
+      adicionarAoCarrinho(nomeCurso, precoCurso);
+    });
+});
+
+
+
+
 /* ------Js-Sobre---------*/
 document.addEventListener('DOMContentLoaded', function() {
     const cards = document.querySelectorAll('.card');
