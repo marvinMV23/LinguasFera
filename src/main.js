@@ -70,12 +70,10 @@ function atualizarCarrinho() {
     const totalCarrinho = document.getElementById("carrinho-total");
     const carrinhoElemento = document.querySelector(".carrinho");
 
-    // Limpa a lista antes de recriá-la
     listaCarrinho.innerHTML = "";
 
     let total = 0;
 
-    // Adiciona cada item ao carrinho na interface
     carrinho.forEach((curso, index) => {
       total += curso.preco;
 
@@ -87,10 +85,8 @@ function atualizarCarrinho() {
       listaCarrinho.appendChild(li);
     });
 
-    // Atualiza o total
     totalCarrinho.textContent = `Total: R$ ${total.toFixed(2)}`;
 
-    // Mostra ou esconde o carrinho
     if (carrinho.length > 0) {
       carrinhoElemento.classList.remove("hidden");
     } else {
@@ -98,13 +94,11 @@ function atualizarCarrinho() {
     }
   }
 
-  // Função para adicionar um curso ao carrinho
 function adicionarAoCarrinho(nome, preco) {
     carrinho.push({ nome, preco });
     atualizarCarrinho();
 }
 
-  // Função para remover um item do carrinho
 function removerDoCarrinho(index) {
     carrinho.splice(index, 1);
     atualizarCarrinho();
